@@ -98,6 +98,8 @@ h3 {
     background-color: #4b2b2c;
     background-image: url(background.png);
     background-repeat: no-repeat;
+    background-position: center;
+
     max-width: 100%;    
 }
 
