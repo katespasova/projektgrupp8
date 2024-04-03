@@ -1,0 +1,62 @@
+<!DOCTYPE html> <!-- Specificerar dokumenttypen och versionen av HTML; i detta fall HTML5 -->
+<html lang="sv"> <!-- Startar HTML-dokumentet och specificerar språket som svenska -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Definierar teckenkodningen för dokumentet som UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Gör sidan responsiv genom att anpassa layouten till olika enhetsskärmar -->
+    <title>Hemligheternas spel</title> <!-- Titeln på webbsidan som visas i webbläsarens flik -->
+    <link rel="stylesheet" href="styles.css"> <!--CSS-->
+    <link rel="stylesheet" href="https://use.typekit.net/iee5zbh.css"> <!--typsnitt Lato-->
+</head>
+
+<body>
+    <div class="bakgrund1">
+        <div class="container"> <!-- generell container för att centrera innehållet på webbplatsen-->
+
+            <header> <!--Ribruk i form av bild för att ha exakt samma utseende på samtliga sidor-->
+                <img src="rubrik.png" alt="rubrik">
+            </header>
+
+            <nav> <!-- Navigering, 4 olika sidor-->
+                <ul>
+                    <li><a href="index.html" class="navcolor"> Startsida</a></li>
+                    <li><a href="karaktarer.html">Karaktärer</a></li>
+                    <li><a href="tavling.html">Tävling</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <div class="mainpage">
+                    <div class="trailer"> <!--Bild som ser ut som en trailer och är klickbar-->
+                        <a href="https://www.youtube.com"><img src="trailer.png" alt="trailer"
+                                class="image-with-shadow"></a>
+                    </div>
+                    <div class="media"> <!--Klickbara bilder med länkar till sociala medier-->
+                        <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a>
+                        <a href="https://www.youtube.com"><img src="youtube.png" alt="Youtube"></a>
+                    </div>
+                    <div class="maininfo"> <!-- Informarion om premiären-->
+                        <h1>NORCOPIA PICTURES presenterar Hemligheternas spel. <br> Premiär 21 juni 2024 GNEMA i Norrköping.</h1>
+                    </div>
+                    <div class="maintext"> <!-- Information om filmen-->
+                        <p>Storstadskillen Adrian flyttar till en ny stad för att börja sina universitetsstudier. Där
+                            möter han Eleonora, en gåtfull tjej med en adlig bakgrund från Östergötland. Eleonora blir
+                            Adrians vägvisare i den nya staden, hjälper honom hitta bostad och arbete. <br><br>Snart
+                            upptäcker Adrian att den adliga familjen har mörka hemligheter. När den lokala kändisen
+                            plötsligt försvinner under ett av de adliga familjens evenemang, dras Adrian in i en farlig
+                            härva av intriger och mysterier. Polisen börjar nysta i fallet, och Adrian måste välja
+                            mellan att skydda Eleonora eller avslöja sanningen om hennes familj. </p>
+                    </div>
+                </div>
+            </main>
+
+            <footer> <!-- Footer innehållande copyright-information -->
+                <p>&copy; NORCOPIA PICTURES</p> 
+            </footer> 
+        </div>
+    </div>
+</body>
+</html>

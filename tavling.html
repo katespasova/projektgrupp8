@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- Specificerar dokumenttypen och versionen av HTML; i detta fall HTML5 -->
+<html lang="sv"> <!-- Startar HTML-dokumentet och specificerar språket som svenska -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Definierar teckenkodningen för dokumentet som UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Gör sidan responsiv genom att anpassa layouten till olika enhetsskärmar -->
+    <title>Hemligheternas spel</title> <!-- Titeln på webbsidan som visas i webbläsarens flik -->
+    <link rel="stylesheet" href="styles.css"> <!--CSS-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/iee5zbh.css"> <!--typsnitt Lato-->
+</head>
+
+<body>
+    <div class="bakgrund3">
+        <div class="container"> <!-- generell container för att centrera innehållet på webbplatsen-->
+
+            <header> <!--Ribruk i form av bild för att ha exakt samma utseende på samtliga sidor-->
+                <img src="rubrik.png" alt="rubrik">
+            </header>
+
+            <nav> <!-- Navigering, 4 olika sidor-->
+                <ul>
+                    <li><a href="index.html"> Startsida</a></li>
+                    <li><a href="karaktarer.html">Karaktärer</a></li>
+                    <li><a href="tavling.html" class="navcolor">Tävling</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <div class="maincompetition">
+                    <div class="instruktion"> <!-- Information till studenter hur de kan delta i tävlingen-->
+                        <h2>Är du student? <br>Vinn biljetter till premiären av Hemligheternas spel.</h2>
+                        <p>Skapa en illustration eller ta ett fotografi som är inspirerat av filmen. <br>Lägg upp ditt
+                            bidrag på din Instagram, fyll i formuläret nedan och klistra in URL-länken.<br> Lycka till!
+                        </p>
+                    </div>
+
+                    <form> <!--Formulär till en tävling för att vinna biljett till premiären av filmen-->
+                        <label for="firstName">Förnamn:</label>
+                        <input type="text" id="firstName" name="firstName" required><br>
+
+                        <label for="lastName">Efternamn:</label>
+                        <input type="text" id="lastName" name="lastName" required><br>
+
+                        <label for="phoneNumber">Telefonnummer:</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+
+                        <label for="email">E-post:</label>
+                        <input type="email" id="email" name="email" required><br>
+
+                        <label for="instagramUrl">Instagram URL:</label>
+                        <input type="url" id="instagramUrl" name="instagramUrl" required><br>
+
+                        <button type="button" onclick="submitForm()">Skicka</button>
+                        <!--Knapp för att lämna in sitt bidrag-->
+                    </form>
+                </div>
+            </main>
+            <footer> <!-- Footer innehållande copyright-information -->
+                <p>&copy; NORCOPIA PICTURES</p>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Java Script-->
+</body>
+</html>

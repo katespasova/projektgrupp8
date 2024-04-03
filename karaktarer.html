@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- Specificerar dokumenttypen och versionen av HTML; i detta fall HTML5 -->
+<html lang="sv"> <!-- Startar HTML-dokumentet och specificerar språket som svenska -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Definierar teckenkodningen för dokumentet som UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Gör sidan responsiv genom att anpassa layouten till olika enhetsskärmar -->
+    <title>Hemligheternas spel</title> <!-- Titeln på webbsidan som visas i webbläsarens flik -->
+    <link rel="stylesheet" href="styles.css"> <!--CSS-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/iee5zbh.css"> <!--typsnitt Lato-->
+</head>
+
+<body>
+    <div class="bakgrund2">
+        <div class="container"> <!-- generell container för att centrera innehållet på webbplatsen-->
+
+            <header> <!--Ribruk i form av bild för att ha exakt samma utseende på samtliga sidor-->
+                <img src="rubrik.png" alt="rubrik">
+            </header>
+
+            <nav> <!-- Navigering, 4 olika sidor-->
+                <ul>
+                    <li><a href="index.html"> Startsida</a></li>
+                    <li><a href="karaktarer.html" class="navcolor">Karaktärer</a></li>
+                    <li><a href="tavling.html">Tävling</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <div class="mainkaraktarer">
+                    <div class="pic1"> <!-- Illustration på huvudkaraktären -->
+                        <img src="eleonoraram.png" alt="karaktär1">
+                    </div>
+                    <div class="article1"> <!--Information om huvudkaraktären-->
+                        <h2>Eleonora von Rosensköld</h2>
+                        <p>Eleonora är en ung kvinna i 20-årsåldern, stolt medlem av den äldre adliga familjen von
+                            Rosensköld. Hon studerar vid universitetet och är känd för sin mystik och intelligens. </p>
+                        <button id="togglebutton">Mer information</button> <!--dölja/visa information, en knapp-->
+                        <div id="hiddentext"><b>Egenskaper:</b> stolt, ambitiös, nyfiken, men också lite ensam. Hon är
+                            fascinerad av det övernaturliga och har en stark intuition.
+                            <br><b>Mål:</b> att hjälpa familjen att dölja sin familjs hemligheter genom att blanda in en
+                            tredje part.
+                        </div>
+                    </div>
+
+                    <div class="pic2">
+                        <img src="adrianram.png" alt="karaktär2"> <!-- Illustration på huvudkaraktären -->
+                    </div>
+                    <div class="article2"> <!-- Information om huvudkaraktären-->
+                        <h2>Adrian Lind</h2>
+                        <p>Adrian är en charmig och målmedveten kille i 20-årsåldern. Han har precis flyttat till
+                            Norrköping från Stockholm och söker efter en ny start med nya möjligheter. Han börjar
+                            studera på universitet i staden. </p>
+                        <button id="togglebutton1">Mer information</button> <!--dölja/visa information, en knapp-->
+                        <div id="hiddentext1"><b>Egenskaper:</b> pragmatisk, äventyrlig, men också lite skeptisk. Han är
+                            öppen för nya möjligheter.
+                            <br><b>Mål:</b> att hitta ett hem och ett extrajobb för att etablera sig i den nya staden.
+                        </div>
+                    </div>
+
+                    <div class="pic3">
+                        <img src="maxram.png" alt="karaktär3"> <!-- Illustration på musikern -->
+                    </div>
+                    <div class="article3"> <!-- Information om musikern-->
+                        <h2>Max Rytm</h2>
+                        <p>Max är en välkänd artist och uppträder alltid på tillställningar i Östergötland.<br> Han är
+                            charmig och karismatisk. Han uppträder ofta på von Rosenskölds evenemang. </p>
+                        <button id="togglebutton2">Mer information</button> <!--dölja/visa information, en knapp-->
+                        <div id="hiddentext2"><b>Egenskaper:</b> karismatisk, musikaliskt, men också lite oberäknelig.
+                            <br><b>Mål:</b> han börjar förstå att det är något mystiskt med den adliga familjen von
+                            Rosensköld och han bestämmer sig för att börja luska i detta på ett av evenemangen han
+                            uppträder på.<br>
+                        </div>
+                    </div>
+                    <div class="pic4"> <!-- Illustration på huvudkaraktären -->
+                        <img src="familjram.png" alt="karaktär4">
+                    </div>
+                    <div class="article4"> <!-- Informtion om adliga familjen-->
+                        <h2>Familjen von Rosensköld</h2>
+                        <p>Grevinnan Elise, tant Isolde och Greve Henrik.
+                            <br>Familjen von Rosensköld är en gåtfull adelsfamilj med djupa rötter på landsbygden i
+                            Östergötland. De är kända för sina excentriska evenamng.
+                        </p>
+                        <button id="togglebutton3">Mer information</button> <!--dölja/visa information, en knapp-->
+                        <div id="hiddentext3"><b>Egenskaper:</b> hemlighetsfulla, traditionsbundna, men också
+                            beskyddande. De har en hemlighet som de försöker dölja.
+                            <br><b>Mål:</b> att bevara familjens traditioner och skydda sina hemligheter till varje
+                            pris.
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer> <!-- Footer innehållande copyright-information -->
+                <p>&copy; NORCOPIA PICTURES</p>
+            </footer> 
+            <script src="script.js"></script> <!-- Java Script-->
+        </div>
+    </div>
+</body>
+
+</html>
